@@ -1,0 +1,38 @@
+shell -bash
+startup_message off
+
+defscrollback 20000
+
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+defbce "on"
+
+escape ``
+
+bind  ! select 11
+bind  @ select 12
+bind \# select 13
+bind  $ select 14
+bind  % select 15
+bind \^ select 16
+bind  & select 17
+bind  * select 18
+bind  ( select 19
+bind  ) select 10
+
+hardstatus alwayslastline
+hardstatus string '%{+b BR}%H %{= bG} %{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..Y} %m/%d %C%a'
+
+term xterm-256color
+
+screen -t g
+screen -t vi
+screen -t db
+screen -t test
+screen -t lint
+screen -t
+screen -t
+screen -t
+screen -t
+screen -t wiki
