@@ -1,0 +1,26 @@
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/matchit.zip' " allow using regex and words with %s
+Plugin 'vim-scripts/ctags.vim'
+Plugin 'vim-scripts/tComment' " toggles commenting out text
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-endwise' " ends certain structures automaticall, adds end after if
+Plugin 'vimwiki/vimwiki'
+
+" ruby
+Plugin 'tpope/vim-rails'
+"
+" " git
+Plugin 'tpope/vim-fugitive' " git wrapper: gBlame, etc
+Plugin 'airblade/vim-gitgutter' " shows git diff in the gutter (sign column: +/-,~)
+"
+" " ctrlp
+Plugin 'airblade/vim-rooter'
+Plugin 'wincent/command-t' " search for file
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
