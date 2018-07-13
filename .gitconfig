@@ -11,7 +11,7 @@
   br = branch
   co = checkout
   st = status
-	ci = commit
+  ci = commit
   cia = commit --amend
   cob = checkout -b
   com = checkout master
@@ -25,4 +25,4 @@
 [commit]
   template = ~/git-commit-template.txt
 [init]
-	templatedir = ~/.git-templates
+  templatedir = ~/.git-templates
