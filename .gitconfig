@@ -19,7 +19,6 @@
   ap = add -p
   rbm = rebase master
   rbmi = rebase master -i
-  g = git
 [push]
   default = tracking
 [commit]
