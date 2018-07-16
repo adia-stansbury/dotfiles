@@ -15,10 +15,10 @@ if [ -d $CUSTOM_INIT_SCRIPTS_DIRECTORY ]; then
   done
 fi
 
-# Load any work specific local scripts
-WORK_SCRIPTS_DIRECTORY=$HOME/dotfiles/work;
-if [ -d $WORK_SCRIPTS_DIRECTORY ]; then
-  for f in `find "$WORK_SCRIPTS_DIRECTORY" -type f -o -type l | \grep "rc$"`; do
+# Load any local scripts (the filename must end with "sh")
+LOCAL_SCRIPTS_DIRECTORY=$HOME/.dotfiles;
+if [ -d $LOCAL_SCRIPTS_DIRECTORY ]; then
+  for f in `find "$LOCAL_SCRIPTS_DIRECTORY" -type f | \grep "sh$"`; do
     source $f;
   done
 fi
