@@ -7,14 +7,6 @@ if [ -f $SSHAGENTRC_FILE ]; then
   source $SSHAGENTRC_FILE;
 fi
 
-# Load any custom init-scripts (the filename *must* end-with "rc")
-CUSTOM_INIT_SCRIPTS_DIRECTORY=$HOME/.home_dir/custom;
-if [ -d $CUSTOM_INIT_SCRIPTS_DIRECTORY ]; then
-  for f in `find "$CUSTOM_INIT_SCRIPTS_DIRECTORY" -type f -o -type l | \grep "rc$"`; do
-    source $f;
-  done
-fi
-
 # Load any local scripts (the filename must end with "sh")
 LOCAL_SCRIPTS_DIRECTORY=$HOME/.dotfiles;
 if [ -d $LOCAL_SCRIPTS_DIRECTORY ]; then
