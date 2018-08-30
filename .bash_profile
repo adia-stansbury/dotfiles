@@ -30,10 +30,5 @@ export NVM_DIR="/Users/astansbury/.nvm"
 # brew install/upgrade bash-completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-function todos {
-  cd $HOME/Dropbox/vimwiki/PLM
-  vi todos.wiki
-}
-
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
