@@ -26,13 +26,13 @@ hardstatus string '%{+b BR}%H %{= bG} %{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..Y} %m/%d
 
 term xterm-256color
 
-screen -t g
-screen -t vi
-screen -t db
-screen -t test
-screen -t lint
 screen -t
 screen -t
 screen -t
 screen -t
-screen -t wiki
+screen -t
+screen -t
+screen -t
+screen -t
+screen -t
+screen -t
