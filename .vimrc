@@ -2,6 +2,9 @@ set nocompatible
 filetype plugin on
 filetype off
 
+" Syntastic
+let g:syntastic_ruby_checkers = ['rubocop']
+
 " FINDING FILES
 
 " Search down into subfolders
