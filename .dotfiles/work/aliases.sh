@@ -10,9 +10,14 @@ function linter {
   npm run lint:watch
 }
 
-function plm_start_with_es {
+function plm_start_current_with_es {
   plm_elastic_search_start
-  plm_start
+  plm_start_current
+}
+
+function plm_start_master_with_es {
+  plm_elastic_search_start
+  plm_start_master
 }
 
 function plm_elastic_search_start {
