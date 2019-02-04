@@ -32,3 +32,4 @@ export NVM_DIR="/Users/astansbury/.nvm"
 
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
+export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
