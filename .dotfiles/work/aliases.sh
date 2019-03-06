@@ -12,12 +12,12 @@ function linter {
 
 function plm_start_current_with_es {
   plm_elastic_search_start
-  plm_start_current
+  plm_start current
 }
 
 function plm_start_master_with_es {
   plm_elastic_search_start
-  plm_start_master
+  plm_start master
 }
 
 function plm_elastic_search_start {
