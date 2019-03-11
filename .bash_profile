@@ -1,5 +1,6 @@
 # update "PATH"
 export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin;
+export EDITOR='vi';
 
 # source ".sshagentrc" if present
 SSHAGENTRC_FILE=$HOME/.sshagentrc;
